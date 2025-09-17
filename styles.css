@@ -1,9 +1,5 @@
-body {
-  background-color: darkblue;
-}
-
 :root {
-  --table-color: rgb(12, 12, 24);
+  --table-color: blue;
   --row-bg-color: white;
 }
 
