@@ -1,0 +1,47 @@
+body {
+  background-color: darkblue;
+}
+
+:root {
+  --table-color: rgb(12, 12, 24);
+  --row-bg-color: white;
+}
+
+
+#game-table {
+  border: 2px solid var(--table-color);
+  text-align: center;
+  height: 200px;
+  width: 400px;
+  border-collapse: collapse;
+}
+
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+table caption {
+  text-transform: uppercase;
+  background-color: var(--table-color);
+  color: white;
+  padding: 10px;
+}
+
+
+tr:nth-child(even) {
+  background-color: var(--row-bg-color);
+}
+
+#game-table th, #game-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+
+#game-table tbody tr:hover {
+  filter: brightness(0.95);
+  cursor: pointer;
+}
