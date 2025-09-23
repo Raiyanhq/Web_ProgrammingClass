@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: #e4e4e4; /* softer off-white text */
+    background: #2a2438 url(background.jpg) center/cover fixed; /* deep indigo backdrop */
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.25rem;
+    background: #352f44; /* dark muted violet */
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.intro {
+    text-align: center;
+    margin-top: 0.5rem;
+    max-width: 750px;
+    background: #3c2a4d; /* rich dark purple */
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.headshot {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0.5rem auto 0.25rem;
+    border: 3px solid #5c5470;
+}
+
+a {
+    color: #a688fa; /* muted violet */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover, a:focus {
+    color: #ff6b81; /* dark pastel coral */
+    text-decoration: underline;
+    outline-offset: 2px;
+}
+
+.projects {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.projects th {
+    padding: 0.5rem 0.8rem;
+    border: 2px solid #6c5b7b;
+    background: #44355b; /* darker violet */
+    color: #f0e9ff;
+    text-align: left;
+}
+
+.projects td {
+    padding: 0.5rem 0.8rem;
+    border: 2px solid #5c5470;
+    color: #ddd;
+}
+
+.projects td:hover {
+    outline: 2px solid #e84a5f; /* dark rose */
+    outline-offset: -2px;
+}
+
+.projects tbody tr:nth-child(odd) {background: #3f3250;} /* deep muted plum */
+.projects tbody tr:nth-child(even) {background: #4a3c61;} /* slightly lighter plum */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.card {
+    background: #2e2a3a; /* dark slate violet */
+    border-radius: 10px;
+    padding: 1.8rem 1.25rem;
+    border: 1px solid #5c5470;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.6rem;
+    color: #cba6f7; /* pastel violet highlight */
+}
+
+.card ul, .card ol {
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+    color: #cfcfcf;
+}
+
+.quote {
+    margin: 1rem 0;
+    padding: 1rem 1.25rem;
+    background: #3c415c; /* dark muted blue-gray */
+    border-left: 4px solid #73648a; /* muted lavender */
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    color: #e0d6f7;
+    font-style: italic;
+}
+
+.keyterm {
+    color: #ff9eb5; /* dark pastel pink */
+    font-weight: 700;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.80rem;
+    padding: 1rem 0 0.5rem;
+    color: #b0a8c2;
+}
