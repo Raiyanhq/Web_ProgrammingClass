@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spooktacular Storybook — CSS-Only</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="spooktacular.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <a class="logo" href="#home" aria-label="Go to Home">🎃 Spooktacular</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#p1">Page 1</a>
+        <a href="#p2">Page 2</a>
+        <a href="#p3">Page 3</a>
+        <a href="#p4">Page 4</a>
+        <a href="#end">End</a>
+      </nav>
+
+      <!-- CSS-only drawer -->
+      <input type="checkbox" id="menu-toggle" class="visually-hidden" aria-hidden="true" />
+      <label for="menu-toggle" class="menu-btn" aria-label="Toggle menu" aria-controls="drawer" aria-expanded="false">☰</label>
+      <nav id="drawer" class="drawer" aria-label="Mobile">
+        <a href="#home">Home</a>
+        <a href="#p1">Page 1</a>
+        <a href="#p2">Page 2</a>
+        <a href="#p3">Page 3</a>
+        <a href="#p4">Page 4</a>
+        <a href="#end">End</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="storybook" role="main">
+    <!-- HOME -->
+    <section class="page home" id="home" aria-labelledby="home-title">
+      <div class="page-inner">
+        <header class="page-header">
+          <h1 id="home-title">Spooktacular Storybook</h1>
+          <p class="kicker">A CSS-Only Halloween tale</p>
+        </header>
+
+        <figure class="scene scene--sky" aria-label="Moonlit sky with stars and bats">
+          <img class="layer stars" src="assets/images/stars.png" alt="" aria-hidden="true">
+          <img class="layer moon"  src="assets/images/moon.svg"  alt="Full moon glowing softly">
+          <img class="layer bats"  src="assets/images/bats.png"  alt="Bats flying across the moon">
+        </figure>
+
+        <p class="lede">Choose <strong>Page 1</strong> to begin. Each page ends with a Next button—like turning a real book.</p>
+
+        <nav class="toc" aria-label="Table of contents">
+          <a class="toc-item" href="#p1">
+            <img src="assets/images/pumpkin.svg" alt="Pumpkin icon">
+            <span>Page 1 — Night Whispers</span>
+          </a>
+          <a class="toc-item" href="#p2">
+            <img src="assets/images/ghost.png" alt="Ghost icon">
+            <span>Page 2 — Moonlit Forest</span>
+          </a>
+          <a class="toc-item" href="#p3">
+            <img src="assets/images/cobweb.svg" alt="Cobweb icon">
+            <span>Page 3 — The Secret Door</span>
+          </a>
+          <a class="toc-item" href="#p4">
+            <img src="assets/images/witch.png" alt="Witch icon">
+            <span>Page 4 — The Choice</span>
+          </a>
+        </nav>
+
+        <p class="pager">
+          <a class="btn accent" href="#p1" aria-label="Start the story at Page 1">Start →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- PAGE 1 -->
+    <section class="page" id="p1" aria-labelledby="p1-title">
+      <div class="page-inner">
+        <header class="page-header">
+          <h2 id="p1-title">Page 1 — Night Whispers</h2>
+        </header>
+
+        <div class="two-col">
+          <div class="prose">
+            <p>On All Hallows’ Eve, the wind sewed <em>hush</em> between doorways,
+            and jack-o’-lanterns grinned with far too many teeth. A single lantern
+            sputtered in the square, throwing long, shivering shadows.</p>
+
+            <p>“Follow the glow,” said a voice you couldn’t place. “But whatever you do,
+            don’t look back.”</p>
+          </div>
+
+          <figure class="figure">
+            <img class="pumpkin" src="assets/images/pumpkin.svg" alt="Carved jack-o’-lantern">
+            <img class="candle"  src="assets/images/candle.svg"  alt="Small candle flickering">
+            <img class="fog"     src="assets/images/fog.png"     alt="" aria-hidden="true">
+            <figcaption class="caption">The candle’s glow made the shadows breathe.</figcaption>
+          </figure>
+        </div>
+
+        <p class="pager">
+          <a class="btn page-prev" href="#home">← Home</a>
+          <a class="btn page-next" href="#p2">Next →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page" id="p2" aria-labelledby="p2-title">
+      <div class="page-inner">
+        <header class="page-header">
+          <h2 id="p2-title">Page 2 — The Moonlit Forest</h2>
+        </header>
+
+        <section class="panels">
+          <article class="panel">
+            <h3>The Quiet Path</h3>
+            <p>Mist curled at our ankles; the stars winked like secrets. The trees parted—just a
+            little—as though inviting us in.</p>
+          </article>
+
+          <article class="panel panel--bats">
+            <figure>
+              <img src="assets/images/bats.png" alt="Bats sweep across the treetops">
+              <figcaption class="caption">A distant flutter grew louder.</figcaption>
+            </figure>
+            <p class="note">Hover to see them flutter.</p>
+          </article>
+
+          <article class="panel panel--ghost">
+            <figure>
+              <img class="ghost-img" src="assets/images/ghost.png" alt="A friendly ghost fades in and out">
+              <figcaption class="caption">Sometimes seen between the lines—if you don’t blink.</figcaption>
+            </figure>
+          </article>
+        </section>
+
+        <p class="pager">
+          <a class="btn page-prev" href="#p1">← Prev</a>
+          <a class="btn page-next" href="#p3">Next →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page" id="p3" aria-labelledby="p3-title">
+      <div class="page-inner">
+        <header class="page-header">
+          <h2 id="p3-title">Page 3 — The Secret Door</h2>
+        </header>
+
+        <div class="grid-tiles">
+          <article class="tile tile--lamp">
+            <h3>Lantern</h3>
+            <img src="assets/images/candle.svg" alt="A lantern candle flickers">
+            <p>Its glow pulses as if it were breathing.</p>
+          </article>
+
+          <article class="tile tile--web">
+            <h3>Cobweb</h3>
+            <img src="assets/images/cobweb.svg" alt="A delicate cobweb in the corner">
+            <p>Threads stretch between the corners, barely there.</p>
+          </article>
+
+          <article class="tile tile--door">
+            <h3>Secret Door</h3>
+            <img src="assets/images/door.svg" alt="A faint rectangular outline of a door">
+            <p>Peer closer. The outline shimmers—only on this night.</p>
+          </article>
+
+          <article class="tile tile--witch">
+            <h3>Passing Shadow</h3>
+            <img src="assets/images/witch.png" alt="A witch silhouette on a broom crosses the sky">
+            <p>A quick fly-by and she’s gone—just a whisper left behind.</p>
+          </article>
+        </div>
+
+        <p class="pager">
+          <a class="btn page-prev" href="#p2">← Prev</a>
+          <a class="btn page-next" href="#p4">Next →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page" id="p4" aria-labelledby="p4-title">
+      <div class="page-inner">
+        <header class="page-header">
+          <h2 id="p4-title">Page 4 — The Choice</h2>
+        </header>
+
+        <div class="two-col">
+          <div class="prose">
+            <p>The door hummed like a kept promise. You held your breath. Somewhere above,
+            wings cut the night—once, twice—and then grew still.</p>
+
+            <p>“Choose,” said the voice at your shoulder. “Open it now, or wait another year.”</p>
+          </div>
+
+          <figure class="figure figure--sky">
+            <img class="stars" src="assets/images/stars.png" alt="" aria-hidden="true">
+            <img class="moon"  src="assets/images/moon.svg"  alt="The moon watches, patient and bright">
+            <figcaption class="caption">On this night, the sky seems to listen.</figcaption>
+          </figure>
+        </div>
+
+        <p class="pager">
+          <a class="btn page-prev" href="#p3">← Prev</a>
+          <a class="btn page-next accent" href="#end">Finish →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- END -->
+    <section class="page endpaper" id="end" aria-labelledby="end-title">
+      <div class="page-inner">
+        <header class="page-header">
+          <h2 id="end-title">End — Credits</h2>
+        </header>
+
+        <blockquote class="tagline">“If found, return before midnight.”</blockquote>
+
+        <p class="pager">
+          <a class="btn" href="#home">Restart ↻</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <small>© 2025 Spooktacular Storybook • Semantic HTML & pure CSS • SVG images bundled.</small>
+    </div>
+  </footer>
+</body>
+</html>
